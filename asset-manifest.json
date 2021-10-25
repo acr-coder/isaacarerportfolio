@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.js": "/isaacarerportfolio/static/js/main.6eb850d4.chunk.js",
+    "main.js.map": "/isaacarerportfolio/static/js/main.6eb850d4.chunk.js.map",
+    "runtime-main.js": "/isaacarerportfolio/static/js/runtime-main.ad323e59.js",
+    "runtime-main.js.map": "/isaacarerportfolio/static/js/runtime-main.ad323e59.js.map",
+    "static/css/2.0a9ec390.chunk.css": "/isaacarerportfolio/static/css/2.0a9ec390.chunk.css",
+    "static/js/2.cfe4d653.chunk.js": "/isaacarerportfolio/static/js/2.cfe4d653.chunk.js",
+    "static/js/2.cfe4d653.chunk.js.map": "/isaacarerportfolio/static/js/2.cfe4d653.chunk.js.map",
+    "index.html": "/isaacarerportfolio/index.html",
+    "static/css/2.0a9ec390.chunk.css.map": "/isaacarerportfolio/static/css/2.0a9ec390.chunk.css.map",
+    "static/js/2.cfe4d653.chunk.js.LICENSE.txt": "/isaacarerportfolio/static/js/2.cfe4d653.chunk.js.LICENSE.txt",
+    "static/media/me.58e314d8.png": "/isaacarerportfolio/static/media/me.58e314d8.png",
+    "static/media/reactImg.e34c0014.jpg": "/isaacarerportfolio/static/media/reactImg.e34c0014.jpg",
+    "static/media/soft.f996ec8c.jpg": "/isaacarerportfolio/static/media/soft.f996ec8c.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ad323e59.js",
+    "static/css/2.0a9ec390.chunk.css",
+    "static/js/2.cfe4d653.chunk.js",
+    "static/js/main.6eb850d4.chunk.js"
+  ]
+}
