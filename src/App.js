@@ -1,23 +1,44 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react'
+import { Grid } from "@material-ui/core";
+import { makeStyles } from "@material-ui/core";
+import Leftbar from "./components/Leftbar";
+import Navbar from "./components/Navbar";
+import Feed from "./components/Feed";
+import Rightbar from "./components/Rightbar";
+import Add from "./components/Add";
+
+const useStyles = makeStyles((theme) => ({
+  right: {
+    [theme.breakpoints.down("sm")]:{
+      display:"none"
+    }
+  }
+}))
 
 function App() {
+  const [open, setOpen] = useState(false);
+  const [myFeed, setMyFeed] = useState(0)
+  const classes = useStyles()
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navbar />
+      <Grid container>
+        <Grid item sm={2} xs={2}>
+          <Leftbar 
+          open={open} setOpen={setOpen} 
+          myFeed={myFeed} setMyFeed={setMyFeed}
+          />
+        </Grid>
+        <Grid item sm={5} xs={10}>
+          <Feed myFeed={myFeed} setMyFeed={setMyFeed}  />
+        </Grid>
+        <Grid item sm={5} className={classes.right}>
+          {myFeed !== 1 ? <Rightbar/> : "null"}
+          
+        </Grid>
+        
+      </Grid>
+      <Add open={open} setOpen={setOpen} />
     </div>
   );
 }
